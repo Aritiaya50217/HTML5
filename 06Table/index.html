@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>การสร้างตาราง (Table)</h1>
+    <!-- <table> กำหนดสำหรับสร้างตาราง -->
+    <table bgcolor="lightblue">
+        <!-- <thead> กำหนดกลุ่มเนื้อหาส่วนหัวตาราง -->
+       <thead>
+           <!-- <th> เนื้อหาส่วนหัวตาราง -->
+           <th>name</th>
+           <th>lastname</th>
+           <th>image</th>
+           <th>price</th>
+           <th>link</th>
+           <th>รวม</th>
+       </thead>
+       <!-- <tbody> กำหนดกลุ่มเนื้อหาตาราง -->
+       <tbody>
+           <!-- <tr> กำหนดแถวในตาราง -->
+           <tr>
+               <!-- <td> กำหนดคอลัมน์ -->
+               <td>A</td>
+               <td>B</td>
+               <td>
+                    <img src="../04Image/images/image-16-1024x561.png" width="100px">
+               </td>
+               <td>
+                   150
+               </td>
+               <td>
+                   <a href="https://www.youtube.com/watch?v=uAVUP1vh6Nw&list=PLltVQYLz1BMDf-N2ZmyJKEv4VlpM_9m67&index=12" target="_blank">สร้าง Table</a>
+               </td>
+           </tr>
+       </tbody>
+       <tfoot>
+        <th>สรุปยอด</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>150</th>
+        </tfoot>
+    </table>
+    <hr>
+    <h1>Attribute ของตาราง</h1>
+    <!-- border = ความหนา
+    width = "%" กำหนดความกว้างหน่วยเป็น % 
+    bgcolor="สี"  กำหนดสีพื้นหลังในตาราง
+    <table bgcolor="สี" กำหนดสีทั้งแถวและคอลัมน์
+    <tr bgcolor = "สี" กำหนดสีของแถว
+    <td bgcolor="สี" สีของคอลัมน์ -->
+        <table border ="2" >
+            <thead>
+               <th>name</th>
+               <th>lastname</th>
+               <th>image</th>
+               <th>price</th>
+               <th>link</th>
+               <th>รวม</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>
+                        <img src="../04Image/images/image-16-1024x561.png" width="150px">
+                    </td>
+                    <td>
+                       150
+                    </td>
+                    <td>
+                       <a href="https://www.youtube.com/watch?v=uAVUP1vh6Nw&list=PLltVQYLz1BMDf-N2ZmyJKEv4VlpM_9m67&index=12" target="_blank">สร้าง Table</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr bgcolor="lightgray">
+                    <td>C</td>
+                    <td>D</td>
+                    <td bgcolor="white">
+                        <img src="../04Image/images/image-16-1024x561.png" width="150px">
+                    </td>
+                    <td>
+                       150
+                    </td>
+                    <td>
+                       <a href="https://www.youtube.com/watch?v=uAVUP1vh6Nw&list=PLltVQYLz1BMDf-N2ZmyJKEv4VlpM_9m67&index=12" target="_blank">สร้าง Table</a>
+                    </td>
+                    <td></td>
+               </tr>
+           </tbody>
+           <tfoot>
+            <th>สรุปยอด</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>150</th>
+            </tfoot>
+        </table>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Attribute ของตาราง</h1>
+    <!-- border = ความหนา
+    width = "%" กำหนดความกว้างหน่วยเป็น % 
+    bgcolor="สี"  กำหนดสีพื้นหลังในตาราง
+    <table bgcolor="สี" กำหนดสีทั้งแถวและคอลัมน์
+    <tr bgcolor = "สี" กำหนดสีของแถว
+    <td bgcolor="สี" สีของคอลัมน์ 
+    colspan="x" รวมคอลัมน์ ค่า x คือจำนวนคอลัมน์ที่ต้องการรวมเข้าด้วยกัน (ช่อง <td>)
+    rowspan="x" รวมแถว ค่า x คือจำนวนแถวที่ต้องการรวมเข้าด้วยกัน
+    aligh="left,center,right" จัดตำแหน่งของภาพ หรือ อักษรภายในช่องตาราง <td> ค่าปกติคือ left Cellpadding แสดงข้อมูลภายในตาราง หากมีค่ามากก็จะมีพื้นที่การแสดงผลเป็นที่
+    ว่างมากขึ้น โดยมีค่าเริ่มต้นเป็น 0 หน่วย Pixel
+    Cellspacing กำหนดขนาดเส้นตาราง หากมีค่ามากขึ้นเส้นตารางก็ จะมีขนาดมากตามไปด้วย โดยมีค่าเริ่มต้นเป็น 0 หน่วยเป็น Pixel-->
+        <table border ="2" >
+            <thead>
+               <th>name</th>
+               <th>lastname</th>
+               <th>image</th>
+               <th>price</th>
+               <th>link</th>
+               <th>รวม</th>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>A</td>
+                    <td>B</td>
+                    <td colspan="1">
+                        <img src="../04Image/images/image-16-1024x561.png" width="150px">
+                    </td>
+                    <td>
+                       150
+                    </td>
+                    <td>
+                       <a href="https://www.youtube.com/watch?v=uAVUP1vh6Nw&list=PLltVQYLz1BMDf-N2ZmyJKEv4VlpM_9m67&index=12" target="_blank">สร้าง Table</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr bgcolor="lightgray" align="center">
+                    <td>C</td>
+                    <td>D</td>
+                    <td bgcolor="white">
+                        <img src="../04Image/images/image-16-1024x561.png" width="150px">
+                    </td>
+                    <td>
+                       150
+                    </td>
+                    <td>
+                       <a href="https://www.youtube.com/watch?v=uAVUP1vh6Nw&list=PLltVQYLz1BMDf-N2ZmyJKEv4VlpM_9m67&index=12" target="_blank">สร้าง Table</a>
+                    </td>
+                    <td></td>
+               </tr>
+           </tbody>
+           <tfoot>
+            <th colspan="5" align="left">สรุปยอด</th>
+            <th>150</th>
+            </tfoot>
+        </table>
+</body>
+</html>

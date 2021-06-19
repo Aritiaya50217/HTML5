@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>การสร้าง Form</h1>
+    <!-- <input> สร้างช่องรับข้อความต่าง ๆ
+    <select> แสดงตัวเลือกในรูปแบบ Drop-down
+    <option> สร้างตัวเลือก
+    <button> สร้างปุ่ม
+    <label> กำหนดป้ายชื่อช่องรับข้อมูล
+    <textarea> สร้างช่องรับข้อความแบบหลายบรรทัด 
+    required บังคับให้กรอก 
+    readonly อ่านได้อย่างเดียว 
+    reset ล้างข้อมูล -->
+    
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <form align="center">
+        <div>
+            <label for="firstname">ชื่อ</label>
+            <input type="text" name="firstname" placeholder="กรุณากรอกชื่อของคุณ"required >
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="email">อีเมล</label>
+            <input type="email" name="email" placeholder="อีเมล">
+        </div>
+        <div>
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password" placeholder="รหัสผ่าน">
+        </div>
+        <div>
+            <label for="address">ที่อยู่</label><br>
+            <textarea name="address" cols="30" rows="10" placeholder="ที่อยู่">
+            </textarea>
+        </div>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" name="age" placeholder="อายุ" min="0" max="100" >
+        </div>
+        <div>
+            <label for="birthday">วันเกิด</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label for="phone">เบอร์ติดต่อ</label>
+            <input type="tel" name="phone">
+        </div>
+        <div>
+            <label for="color">สีที่ชอบ</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="range" >ช่วง</label>
+            <input type="range" name="range" value="1">
+        </div>
+        <div>
+            <label for="edu">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="มัธยมศึกษา" selected>มัธยมศึกษา</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท" >ปริญญาโท</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">เพศ</label>
+            <input type="radio" name="gender" >เพศชาย
+            <input type="radio" name="gender" >เพศหญิง
+            <input type="radio" name="gender" >ไม่ระบุ
+        </div>
+        <div>
+            <label for="resume">แนบเอกสาร</label>
+            <input type="file">  
+        </div>
+        <div>
+            <label for="resume">เว็บไซต์</label>
+            <input type="url">  
+        </div>
+        <div>
+            <button type="submit">บันทึก</button>
+            <button type="reset" name="" id="" value="ล้างข้อมูล"></button>
+        </div>
+    </form>
+    
+</body>
+</html>
